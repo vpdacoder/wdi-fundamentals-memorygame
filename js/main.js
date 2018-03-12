@@ -26,10 +26,11 @@ var cardsInPlay = [];
 
 var checkForMatch = function() {
 
-	if (cardsInPlay.length === 2, cardsInPlay[0] === cardsInPlay[1]) {
-	alert("You found a match!");
-	} else {
-	alert("Sorry, try again.");
+	if (cardsInPlay.length > 1){
+		if (cardsInPlay[cardsInPlay.length-1] === cardsInPlay[cardsInPlay.length-2]) {
+			alert("You found a match!");
+		}
+		else alert("Sorry, try again");
 	}
 	};
 
